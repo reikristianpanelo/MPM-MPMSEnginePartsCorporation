@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MPM/MPMS Engine Parts Corp.</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/MPMSLogo.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-light p-0">
+    <div class="row gx-0 d-none d-lg-flex">
+
+        <!-- LEFT SIDE -->
+        <div class="col-lg-7 px-5 text-start">
+
+            <div class="h-100 d-inline-flex align-items-center py-3">
+                <small class="far fa-clock text-primary me-2"></small>
+                <small>Store Hours: Monday - Friday 09:00 AM - 03:30 PM , Saturday 09:00 AM - 11:00 AM</small>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="col-lg-5 px-5 text-end">
+
+            <!-- PHONE -->
+            <!--<div class="h-100 d-inline-flex align-items-center py-3 me-3">
+                <small class="fa fa-phone-alt text-primary me-2"></small>
+                <small>0969 171 3144 / 0933 825 1487</small>
+            </div>-->
+
+            <!-- EMAIL (NEW) -->
+            <div class="h-100 d-inline-flex align-items-center py-3 me-3">
+                <small class="fa fa-envelope text-primary me-2"></small>
+                <a href="mailto:mpmsengine@gmail.com" class="text-decoration-none text-dark">
+    mpmsengine@gmail.com
+</a>
+            </div>
+
+            <!-- SOCIAL ICONS -->
+            <div class="h-100 d-inline-flex align-items-center">
+
+                <a class="btn btn-sm-square bg-white text-primary me-1"
+                   href="https://www.facebook.com/MPMSEnginePartsCorporation"
+                   target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- Topbar End -->
+
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+
+    <!-- LOGO + TITLE -->
+    <a href="index.html"
+       class="navbar-brand d-flex align-items-center px-3 px-lg-5 m-0">
+
+        <!-- REPLACED ICON WITH IMAGE LOGO -->
+        <img src="img/MPMSLogo.png"
+             alt="MPMS Logo"
+             class="me-2"
+             style="height:40px; width:auto;">
+
+        <h2 class="m-0 text-primary brand-title">
+            MPM/MPMS Engine Parts Corporation
+        </h2>
+    </a>
+
+    <!-- MOBILE TOGGLER -->
+    <button type="button"
+            class="navbar-toggler me-3"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- NAV LINKS -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+
+            <a href="about.html" class="nav-item nav-link">About</a>
+
+            <!--<a href="service.html" class="nav-item nav-link">Services</a>-->
+
+            <a href="contact.html" class="nav-item nav-link d-lg-none">
+                Contact
+            </a>
+
+        </div>
+
+        <!-- DESKTOP BUTTON -->
+        <a href="contact.html"
+           class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
+            Get A Quote
+            <i class="fa fa-arrow-right ms-3"></i>
+        </a>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+<!-- RESPONSIVE NAVBAR CSS -->
+<style>
+
+    .navbar {
+        min-height: 75px;
+    }
+
+    /* AUTO SCALING TEXT */
+    .brand-title {
+        font-size: clamp(0.85rem, 2vw, 1.4rem);
+        white-space: normal;
+        line-height: 1.2;
+    }
+
+    @media (max-width: 991px) {
+
+        .navbar-brand {
+            width: 80%;
+            padding-right: 10px;
+        }
+
+        .navbar-toggler {
+            flex-shrink: 0;
+        }
+
+        .navbar-collapse {
+            background: #fff;
+            padding-bottom: 15px;
+        }
+
+        .navbar-nav .nav-link {
+            padding: 10px 0;
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        .navbar-brand {
+            width: 75%;
+        }
+    }
+
+</style>
+
+
+<!-- Carousel Start (Single Slide Only) -->
+<div class="container-fluid p-0 mb-5">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="false">
+
+        <div class="carousel-inner">
+
+            <!-- ONLY SLIDE (ACTIVE) -->
+            <div class="carousel-item active">
+                <img class="w-100" src="img/catalog.jpg" alt="MPMS Engine Parts Corporation">
+
+                <div class="carousel-caption d-flex align-items-center">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center justify-content-lg-start">
+
+                            <!-- TEXT (DESKTOP ONLY) -->
+                            <div class="col-12 col-lg-7 text-center text-lg-start d-none d-lg-block">
+                                <h6 class="text-white text-uppercase mb-3 animated slideInDown">
+                                    // Diesel Engine Parts Supplier //
+                                </h6>
+
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">
+                                    MPM/MPMS Corporation — Authentic FP Diesel Engine Parts Supplier
+                                </h1>
+                            </div>
+
+                            <!-- DESKTOP RIGHT IMAGE ONLY -->
+                            <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                <img class="img-fluid"
+                                     src="img/promotion.jpg"
+                                     alt="FP Diesel Engine Parts"
+                                     style="cursor: zoom-in;"
+                                     data-bs-toggle="modal"
+                                     data-bs-target="#promoModal">
+                            </div>
+
+                            <!-- MOBILE ONLY IMAGE (CENTERED PROPERLY) -->
+<div class="col-12 d-lg-none d-flex justify-content-center align-items-center text-center">
+    <img class="img-fluid"
+         src="img/promotion.jpg"
+         alt="FP Diesel Engine Parts"
+         style="max-height: 280px; width: auto; object-fit: contain; cursor: zoom-in;"
+         data-bs-toggle="modal"
+         data-bs-target="#promoModal">
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+<!-- Service Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- SERVICE 1 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="d-flex bg-light py-5 px-4 service-card">
+                    <i class="fa fa-certificate fa-3x text-primary flex-shrink-0"></i>
+                    <div class="ps-4">
+                        <h5 class="mb-3">Guaranteed Quality Parts</h5>
+                        <p>
+                            We supply premium FP Diesel products known for their durability,
+                            precision engineering, and OEM-level performance trusted worldwide.
+                        </p>
+                        <!--<a class="text-secondary border-bottom" href="#">Learn More</a>-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 2 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="d-flex bg-light py-5 px-4 service-card">
+                    <i class="fa fa-users-cog fa-3x text-primary flex-shrink-0"></i>
+                    <div class="ps-4">
+                        <h5 class="mb-3">Trusted Engine Experts</h5>
+                        <p>
+                            Our team provides professional assistance in selecting the right FP Diesel
+                            components for heavy-duty diesel engine applications and rebuilds.
+                        </p>
+                        <!--<a class="text-secondary border-bottom" href="#">Learn More</a>-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 3 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="d-flex bg-light py-5 px-4 service-card">
+                    <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
+                    <div class="ps-4">
+                        <h5 class="mb-3">USA-Branded Performance Parts</h5>
+                        <p>
+                            FP Diesel delivers high-performance, USA-branded engine components
+                            designed for strength, reliability, and long-lasting engine life.
+                        </p>
+                        <!--<a class="text-secondary border-bottom" href="#">Learn More</a>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-items-stretch">
+
+            <!-- IMAGE CAROUSEL -->
+            <div class="col-lg-6 pt-4 d-flex" style="min-height: 600px;">
+
+                <div class="position-relative w-100 wow fadeIn" data-wow-delay="0.1s">
+
+                    <div id="mpmsAboutCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+
+                        <div class="carousel-inner h-100">
+
+                            <!-- IMAGE 1 -->
+                            <div class="carousel-item active h-100">
+                                <img src="img/ToughParts.jpg"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit: contain; object-position: center; background-color: #fff;"
+                                     alt="Tough Parts">
+                            </div>
+
+                            <!-- IMAGE 2 -->
+                            <div class="carousel-item h-100">
+                                <img src="img/ForRepair.jpg"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit: contain; object-position: center; background-color: #fff;"
+                                     alt="Repair Kit">
+                            </div>
+
+                        </div>
+
+                        <!-- CONTROLS -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mpmsAboutCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#mpmsAboutCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+
+                    </div>
+
+                    <!-- LABEL -->
+                    <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                         style="background: rgba(0,0,0,.5); z-index: 10;">
+                        <h1 class="display-4 text-white mb-0">FP</h1>
+                        <h4 class="text-white">Diesel Quality</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="col-lg-6">
+
+                <h6 class="text-primary text-uppercase">// About Us //</h6>
+
+                <h1 class="mb-4">
+                    <span class="text-primary">MPM/MPMS Engine Parts</span>
+                    — Trusted Source for FP Diesel Engine Parts
+                </h1>
+
+                <p class="mb-4">
+                    MPM/MPMS Engine Parts Corporation is a trusted supplier of high-quality diesel engine components in the Philippines.
+                    Originally known as <strong>MPM Corporation</strong>, the company has grown through decades of industry experience,
+                    evolving into a more established and expanded organization known today as MPMS Engine Parts Corporation.
+                    It continues to serve workshops, fleet operators, and heavy equipment users nationwide.
+                </p>
+
+                <div class="row g-4 mb-3 pb-3">
+
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
+                                 style="width:45px;height:45px;">
+                                <span class="fw-bold text-secondary">01</span>
+                            </div>
+                            <div class="ps-3">
+                                <h6>Strong Industry Foundation</h6>
+                                <span>
+                                    Built from MPM Corporation, MPMS has developed a strong reputation
+                                    in the diesel engine parts industry through consistent service and reliability.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
+                                 style="width:45px;height:45px;">
+                                <span class="fw-bold text-secondary">02</span>
+                            </div>
+                            <div class="ps-3">
+                                <h6>Expert Technical Support</h6>
+                                <span>
+                                    Our experienced team provides accurate recommendations for engine repair,
+                                    rebuild, and maintenance to ensure the right part for every application.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
+                                 style="width:45px;height:45px;">
+                                <span class="fw-bold text-secondary">03</span>
+                            </div>
+                            <div class="ps-3">
+                                <h6>Reliable Nationwide Supply</h6>
+                                <span>
+                                    MPMS is committed to providing consistent availability, fair pricing,
+                                    and dependable service for customers across the Philippines.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="mb-4">
+                    We proudly offer <strong>FP Diesel</strong>, a globally recognized USA-branded line known for durability,
+                    precision engineering, and reliable performance in heavy-duty applications.
+                    Each product is carefully selected to meet OEM standards, ensuring long engine life,
+                    efficiency, and consistent performance under demanding conditions.
+                </p>
+
+                <!-- FP DIESEL HISTORY -->
+                <p class="mb-4">
+                    <strong>History of FP Diesel:</strong><br><br>
+
+                    FP Diesel has its roots in the FelPro brand. FelPro is the industry leader in under hood gasket solutions.
+                    In 1993, Fel-Pro launched a diesel parts line named FP Diesel. Subsequently, in 1997, Federal-Mogul acquired
+                    Fel-Pro and continued to build on the FP Diesel brand. In 2015, FP Diesel moved its distribution center and
+                    engineering team to Skokie, Illinois. In 2011, FP Diesel engine portfolio reached 25,000 SKUs.
+                    <br><br>
+
+                    Tenneco (FP Diesel’s parent company) is a global OE engine parts manufacturer, producing and delivering to OEMs,
+                    the OE spares market, and the aftermarket. We deliver FP Diesel engine parts globally for the vast majority of
+                    off-highway vehicle engines.
+                </p>
+
+                <!-- BUTTON + TEXT -->
+                <div class="d-flex align-items-center flex-wrap gap-3">
+
+                    <a href="https://thefpdiesel.com/"
+                       target="_blank"
+                       class="btn btn-primary py-3 px-5">
+                        Learn More <i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+
+                    <span class="text-muted">
+                        Click Here to Learn More about FP Diesel.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Video Section Start (WITH BACKGROUND) -->
+<div class="container-xxl py-5 position-relative">
+
+    <!-- BLURRED BACKGROUND IMAGE -->
+    <div class="position-absolute top-0 start-0 w-100 h-100"
+         style="
+            background: url('img/catalog.jpg') center/cover no-repeat;
+            filter: blur(18px);
+            transform: scale(1.1);
+            z-index: 0;
+         ">
+    </div>
+
+    <!-- DARK OVERLAY (FP DIESEL STYLE) -->
+    <div class="position-absolute top-0 start-0 w-100 h-100"
+         style="
+            background: rgba(10, 15, 25, 0.75);
+            z-index: 1;
+         ">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container position-relative" style="z-index: 2;">
+
+        <div class="text-left mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-primary text-uppercase">// Showcase //</h6>
+            <h1 class="mb-4 text-white">FP Diesel Engine Parts</h1>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- VIDEO -->
+            <div class="col-lg-10 wow fadeInUp" data-wow-delay="0.2s">
+
+                <div class="position-relative shadow rounded overflow-hidden border border-secondary">
+
+<!-- VIDEO -->
+<video id="fpVideo"
+       class="w-100"
+       style="max-height: 450px;"
+       controls
+       preload="metadata"
+       poster="img/catalog.jpg">
+
+    <source src="video/FP Diesel - Engineered to Thrive in Demanding Work Environment.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+                    <!-- PLAY BUTTON -->
+<button id="videoBtn"
+        class="btn btn-light rounded-circle shadow position-absolute top-50 start-50 translate-middle video-overlay-btn"
+        onclick="toggleVideo()">
+
+    <i id="videoIcon" class="fa fa-play fa-2x text-primary"></i>
+
+</button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Video Section End -->
+
+<!-- Calling Card Section Start -->
+<div class="container-xxl py-5 position-relative">
+
+    <!-- BLURRED BACKGROUND IMAGE -->
+    <div class="position-absolute top-0 start-0 w-100 h-100"
+         style="
+            background: url('img/callingCard.jpg') center/cover no-repeat;
+            filter: blur(18px);
+            transform: scale(1.1);
+            z-index: 0;
+         ">
+    </div>
+
+    <!-- DARK OVERLAY (FP DIESEL STYLE) -->
+    <div class="position-absolute top-0 start-0 w-100 h-100"
+         style="
+            background: rgba(10, 15, 25, 0.75);
+            z-index: 1;
+         ">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container position-relative" style="z-index: 2;">
+
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-primary text-uppercase">// Contact //</h6>
+            <h1 class="mb-4 text-white">Calling Card</h1>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-5 col-md-8 wow fadeInUp" data-wow-delay="0.2s">
+
+                <!-- CARD WRAPPER -->
+                <div class="shadow-lg rounded overflow-hidden border border-secondary">
+
+                    <img src="img/callingCard.jpg"
+                         class="w-100"
+                         style="object-fit: cover; cursor: zoom-in;"
+                         alt="Calling Card"
+                         data-bs-toggle="modal"
+                         data-bs-target="#callingCardModal">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- Calling Card Section End -->
+
+<script>
+const video = document.getElementById("fpVideo");
+const btn = document.getElementById("videoBtn");
+const icon = document.getElementById("videoIcon");
+
+function toggleVideo() {
+    if (video.paused) {
+        video.play();
+        btn.style.display = "none"; // 🔥 hide button completely
+    } else {
+        video.pause();
+        btn.style.display = "flex";  // show button again
+        icon.classList.remove("fa-pause");
+        icon.classList.add("fa-play");
+    }
+}
+
+// When video is paused (user clicks video controls)
+video.addEventListener("pause", () => {
+    btn.style.display = "flex";
+    icon.classList.remove("fa-pause");
+    icon.classList.add("fa-play");
+});
+
+// When video starts playing (sync state)
+video.addEventListener("play", () => {
+    icon.classList.remove("fa-play");
+    icon.classList.add("fa-pause");
+    btn.style.display = "none";
+});
+</script>
+    <!-- Fact Start
+    <div class="container-fluid fact bg-dark my-5 py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-check fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Years Experience</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Expert Technicians</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-users fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Satisfied Clients</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-car fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Compleate Projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    Fact End -->
+
+
+    <!-- Service Start
+    <div class="container-xxl service py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase">// Our Services //</h6>
+                <h1 class="mb-5">Explore Our Services</h1>
+            </div>
+            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4">
+                    <div class="nav w-100 nav-pills me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <i class="fa fa-car-side fa-2x me-3"></i>
+                            <h4 class="m-0">Diagnostic Test</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <i class="fa fa-car fa-2x me-3"></i>
+                            <h4 class="m-0">Engine Servicing</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <i class="fa fa-cog fa-2x me-3"></i>
+                            <h4 class="m-0">Tires Replacement</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <i class="fa fa-oil-can fa-2x me-3"></i>
+                            <h4 class="m-0">Oil Changing</h4>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content w-100">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-1.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-2">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-2.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-3.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-4">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-4.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Service End -->
+
+
+    <!-- Booking Start
+    <div class="container-fluid bg-secondary booking my-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6 py-5">
+                    <div class="py-5">
+                        <h1 class="text-white mb-4">Certified and Award Winning Car Repair Service Provider</h1>
+                        <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-primary h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
+                        <h1 class="text-white mb-4">Book For A Service</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Select A Service</option>
+                                        <option value="1">Service 1</option>
+                                        <option value="2">Service 2</option>
+                                        <option value="3">Service 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="date" id="date1" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control border-0 datetimepicker-input"
+                                            placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" placeholder="Special Request"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-secondary w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     Booking End -->
+
+
+    <!-- Team Start
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase">// Our Technicians //</h6>
+                <h1 class="mb-5">Our Expert Technicians</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="fw-bold mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="fw-bold mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="fw-bold mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="fw-bold mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     Team End -->
+
+
+    <!-- Testimonial Start
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="text-primary text-uppercase">// Testimonial //</h6>
+                <h1 class="mb-5">Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Client Name</h5>
+                    <p>Profession</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Client Name</h5>
+                    <p>Profession</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Client Name</h5>
+                    <p>Profession</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Client Name</h5>
+                    <p>Profession</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Testimonial End -->
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn"
+     data-wow-delay="0.1s">
+
+    <div class="container-fluid py-5 px-lg-5">
+        <div class="row g-5 align-items-start justify-content-between">
+
+            <!-- LOGO -->
+            <div class="col-lg-2 col-md-6 text-center text-lg-start ps-lg-4">
+                <img src="img/MPMSLogo.png"
+                     alt="MPMS Engine Parts Corporation"
+                     class="img-fluid mb-3"
+                     style="max-width: 180px;">
+            </div>
+
+            <!-- STORE LOCATIONS -->
+            <div class="col-lg-2 col-md-6">
+                <h4 class="text-light mb-4">Store Locations:</h4>
+
+                <p class="mb-2">
+                    <i class="fa fa-map-marker-alt me-3"></i>
+                    <a href="https://www.google.com/maps?q=MPMS+Engine+Parts+Corporation+Navotas+Metro+Manila"
+                       target="_blank"
+                       class="text-light text-decoration-none">
+                        MPMS Engine Parts Corporation, Navotas, Metro Manila
+                    </a>
+                </p>
+
+                <p class="mb-2">
+                    <i class="fa fa-map-marker-alt me-3"></i>
+                    <a href="https://www.google.com/maps?q=MPMS+Engine+Parts+Corporation+QC+Metro+Manila"
+                       target="_blank"
+                       class="text-light text-decoration-none">
+                        MPMS Engine Parts Corporation, QC, Metro Manila
+                    </a>
+                </p>
+            </div>
+
+            <!-- STORE HOURS -->
+            <div class="col-lg-2 col-md-6">
+                <h4 class="text-light mb-4">Store Hours</h4>
+
+                <h6 class="text-light">Monday - Friday:</h6>
+                <p class="mb-4">09:00 AM - 03:30 PM</p>
+
+                <h6 class="text-light">Saturday:</h6>
+                <p class="mb-0">09:00 AM - 11:00 AM</p>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-2 col-md-6">
+                <h4 class="text-light mb-4">Contact</h4>
+
+                <p class="mb-2">
+                    <a href="tel:+639691713144" class="text-light text-decoration-none">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        0969 171 3144
+                    </a>
+                </p>
+
+                <p class="mb-2">
+                    <a href="tel:+639338251487" class="text-light text-decoration-none">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        0933 825 1487
+                    </a>
+                </p>
+
+                <p class="mb-2">
+                    <a href="tel:+63283721666" class="text-light text-decoration-none">
+                        <i class="fa fa-building me-3"></i>
+                        8372-1666
+                    </a>
+                </p>
+
+                <p class="mb-2">
+                    <a href="tel:+63283724947" class="text-light text-decoration-none">
+                        <i class="fa fa-building me-3"></i>
+                        8372-4947
+                    </a>
+                </p>
+
+                <p class="mb-2 d-flex align-items-center">
+                    <i class="fa fa-envelope me-3"></i>
+                    <a href="mailto:mpmsengine@gmail.com"
+                       class="text-light text-decoration-none text-break">
+                        mpmsengine@gmail.com
+                    </a>
+                </p>
+            </div>
+
+            <!-- FP DIESEL -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">
+                    FP Diesel — Built to Perform. Built to Last.
+                </h4>
+
+                <p>
+                    Power your engines with confidence using FP Diesel,
+                    the trusted global brand for high-performance diesel engine parts. —
+                    <span class="fw-bold text-light">Get your parts at MPMS now!</span>
+                </p>
+
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light px-3"
+                       href="https://www.facebook.com/MPMSEnginePartsCorporation"
+                       target="_blank">
+                        Follow Us on Facebook!
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- COPYRIGHT (FULL WIDTH FLUSH BOTTOM) -->
+    <div class="container-fluid bg-dark text-light px-0">
+        <div class="copyright py-3 m-0 border-top"
+             style="border-color: rgba(255,255,255,0.1) !important;">
+            <div class="row w-100 m-0">
+
+                <!-- LEFT -->
+                <div class="col-md-6 text-center text-md-start ps-lg-4">
+                    &copy;
+                    <a class="border-bottom text-light"
+                       href="https://www.facebook.com/MPMSEnginePartsCorporation">
+                        MPMS Engine Parts Corporation
+                    </a>,
+                    All Rights Reserved.
+                </div>
+
+                <!-- RIGHT -->
+                <div class="col-md-6 text-center text-md-end pe-lg-4">
+                    <div class="footer-menu"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+<!-- IMAGE ZOOM MODAL -->
+<div class="modal fade" id="promoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+
+    <div class="modal-content bg-dark">
+
+      <div class="modal-body p-0">
+
+        <img src="img/promotion.jpg"
+             class="w-100"
+             style="object-fit: contain; max-height: 90vh;"
+             alt="Zoomed Image">
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Calling Card Zoom Modal -->
+<div class="modal fade" id="callingCardModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+
+    <div class="modal-content bg-dark border-0">
+
+      <div class="modal-body p-0 text-center">
+
+        <img src="img/callingCard.jpg"
+             class="img-fluid"
+             style="max-height: 90vh; object-fit: contain;"
+             alt="Calling Card Zoomed">
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
