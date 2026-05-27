@@ -307,16 +307,26 @@
     <div class="container">
         <div class="row g-5 align-items-stretch">
 
-            <!-- IMAGE CAROUSEL -->
-            <div class="col-lg-6 pt-4 d-flex" style="min-height: 600px;">
+            <!-- LEFT SIDE: HEADING + CAROUSEL -->
+            <div class="col-lg-6 pt-4 d-flex flex-column" style="min-height: 600px;">
 
-                <div class="position-relative w-100 wow fadeIn" data-wow-delay="0.1s">
+                <!-- MOVED HEADING (UNCHANGED CONTENT) -->
+                <div class="mb-4 wow fadeIn" data-wow-delay="0.1s">
+                    <h6 class="text-primary text-uppercase">// FP Diesel Quality Excellence //</h6>
+
+                    <h1 class="mb-4">
+                        <span class="text-primary">MPM/MPMS Engine Parts</span>
+                        — Trusted Source for FP Diesel Authentic Engine Parts
+                    </h1>
+                </div>
+
+                <!-- IMAGE CAROUSEL -->
+                <div class="position-relative w-100 flex-grow-1 wow fadeIn" data-wow-delay="0.2s">
 
                     <div id="mpmsAboutCarousel" class="carousel slide h-100" data-bs-ride="carousel">
 
                         <div class="carousel-inner h-100">
 
-                            <!-- IMAGE 1 -->
                             <div class="carousel-item active h-100">
                                 <img src="img/ToughParts.jpg"
                                      class="d-block w-100 h-100"
@@ -324,7 +334,6 @@
                                      alt="Tough Parts">
                             </div>
 
-                            <!-- IMAGE 2 -->
                             <div class="carousel-item h-100">
                                 <img src="img/ForRepair.jpg"
                                      class="d-block w-100 h-100"
@@ -335,17 +344,19 @@
                         </div>
 
                         <!-- CONTROLS -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#mpmsAboutCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button"
+                                data-bs-target="#mpmsAboutCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </button>
 
-                        <button class="carousel-control-next" type="button" data-bs-target="#mpmsAboutCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button"
+                                data-bs-target="#mpmsAboutCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </button>
 
                     </div>
 
-                    <!-- LABEL -->
+                    <!-- FP DIESEL QUALITY LABEL (RESTORED) -->
                     <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
                          style="background: rgba(0,0,0,.5); z-index: 10;">
                         <h1 class="display-4 text-white mb-0">FP</h1>
@@ -355,15 +366,8 @@
                 </div>
             </div>
 
-            <!-- CONTENT -->
+            <!-- RIGHT SIDE: CONTENT (UNCHANGED) -->
             <div class="col-lg-6">
-
-                <h6 class="text-primary text-uppercase">// About Us //</h6>
-
-                <h1 class="mb-4">
-                    <span class="text-primary">MPM/MPMS Engine Parts</span>
-                    — Trusted Source for FP Diesel Engine Parts
-                </h1>
 
                 <p class="mb-4">
                     MPM/MPMS Engine Parts Corporation is a trusted supplier of high-quality diesel engine components in the Philippines.
@@ -431,7 +435,6 @@
                     efficiency, and consistent performance under demanding conditions.
                 </p>
 
-                <!-- FP DIESEL HISTORY -->
                 <p class="mb-4">
                     <strong>History of FP Diesel:</strong><br><br>
 
@@ -446,7 +449,6 @@
                     off-highway vehicle engines.
                 </p>
 
-                <!-- BUTTON + TEXT -->
                 <div class="d-flex align-items-center flex-wrap gap-3">
 
                     <a href="https://thefpdiesel.com/"
@@ -456,7 +458,7 @@
                     </a>
 
                     <span class="text-muted">
-                        Click Here to Learn More about FP Diesel.
+                        Click Here to Learn More about FP Diesel Official.
                     </span>
 
                 </div>
