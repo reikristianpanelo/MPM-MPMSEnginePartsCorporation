@@ -773,62 +773,78 @@
 <!-- About End -->
 
 
-<!-- Video Section Start (WITH BACKGROUND) -->
-<div class="container-xxl py-5 position-relative">
+<!-- ===================== VIDEO SECTION START ===================== -->
+<div class="container-xxl py-5 position-relative overflow-hidden fp-section fp-gap-top">
 
-    <!-- BLURRED BACKGROUND IMAGE -->
-    <div class="position-absolute top-0 start-0 w-100 h-100"
-         style="
-            background: url('img/catalog.jpg') center/cover no-repeat;
-            filter: blur(18px);
-            transform: scale(1.1);
-            z-index: 0;
-         ">
-    </div>
+    <div class="position-absolute top-0 start-0 w-100 h-100 fp-bg"
+         style="background: url('img/catalog.jpg') center/cover no-repeat;"></div>
 
-    <!-- DARK OVERLAY (FP DIESEL STYLE) -->
-    <div class="position-absolute top-0 start-0 w-100 h-100"
-         style="
-            background: rgba(10, 15, 25, 0.75);
-            z-index: 1;
-         ">
-    </div>
+    <div class="position-absolute top-0 start-0 w-100 h-100 fp-gradient"></div>
 
-    <!-- CONTENT -->
-    <div class="container position-relative" style="z-index: 2;">
+    <div class="container position-relative" style="z-index:2;">
 
-        <div class="text-left mb-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="text-left mb-5 wow fadeInUp">
             <h6 class="text-primary text-uppercase">// Showcase //</h6>
             <h1 class="mb-4 text-white">FP Diesel Engine Parts</h1>
         </div>
 
-        <div class="row g-4 justify-content-center">
+        <div class="row g-4 align-items-center">
 
             <!-- VIDEO -->
-            <div class="col-lg-10 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-lg-8 col-md-12 wow fadeInUp">
 
-                <div class="position-relative shadow rounded overflow-hidden border border-secondary">
+                <div class="position-relative shadow rounded overflow-hidden border border-secondary"
+                     style="height: 460px;">
 
-<!-- VIDEO -->
-<video id="fpVideo"
-       class="w-100"
-       style="max-height: 450px;"
-       controls
-       preload="metadata"
-       poster="img/catalog.jpg">
+                    <video id="fpVideo"
+                           class="w-100 h-100"
+                           controls
+                           preload="metadata"
+                           poster="img/catalog.jpg"
+                           style="object-fit: contain;">
 
-    <source src="video/FP Diesel - Engineered to Thrive in Demanding Work Environments.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+                        <source src="video/FP Diesel - Engineered to Thrive in Demanding Work Environments.mp4">
+                    </video>
 
-                    <!-- PLAY BUTTON -->
-<button id="videoBtn"
-        class="btn btn-light rounded-circle shadow position-absolute top-50 start-50 translate-middle video-overlay-btn"
-        onclick="toggleVideo()">
+                    <button id="videoBtn"
+                            class="btn btn-light rounded-circle shadow position-absolute top-50 start-50 translate-middle"
+                            onclick="toggleVideo()">
+                        <i id="videoIcon" class="fa fa-play fa-2x text-primary"></i>
+                    </button>
 
-    <i id="videoIcon" class="fa fa-play fa-2x text-primary"></i>
+                </div>
+            </div>
 
-</button>
+            <!-- CAROUSEL -->
+            <div class="col-lg-4 col-md-12 wow fadeInUp">
+
+                <div id="partsCarousel"
+                     class="carousel slide shadow rounded overflow-hidden border border-secondary"
+                     data-bs-ride="carousel"
+                     style="height: 460px;">
+
+                    <div class="carousel-inner h-100">
+
+                        <div class="carousel-item active h-100">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <img src="img/ToughParts.jpg"
+                                     class="img-fluid"
+                                     style="max-height:100%; max-width:100%; object-fit:contain;">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <img src="img/ForRepair.jpg"
+                                     class="img-fluid"
+                                     style="max-height:100%; max-width:100%; object-fit:contain;">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#partsCarousel" data-bs-slide="prev"></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#partsCarousel" data-bs-slide="next"></button>
 
                 </div>
 
@@ -837,48 +853,33 @@
         </div>
     </div>
 </div>
-<!-- Video Section End -->
+<!-- ===================== VIDEO SECTION END ===================== -->
 
-<!-- Calling Card Section Start -->
-<div class="container-xxl py-5 position-relative">
 
-    <!-- BLURRED BACKGROUND IMAGE -->
-    <div class="position-absolute top-0 start-0 w-100 h-100"
-         style="
-            background: url('img/callingCard.jpg') center/cover no-repeat;
-            filter: blur(18px);
-            transform: scale(1.1);
-            z-index: 0;
-         ">
-    </div>
+<!-- ===================== CALLING CARD SECTION START ===================== -->
+<div class="container-xxl py-5 position-relative overflow-hidden fp-section fp-gap-bottom">
 
-    <!-- DARK OVERLAY (FP DIESEL STYLE) -->
-    <div class="position-absolute top-0 start-0 w-100 h-100"
-         style="
-            background: rgba(10, 15, 25, 0.75);
-            z-index: 1;
-         ">
-    </div>
+    <div class="position-absolute top-0 start-0 w-100 h-100 fp-bg"
+         style="background: url('img/callingCard.jpg') center/cover no-repeat;"></div>
 
-    <!-- CONTENT -->
-    <div class="container position-relative" style="z-index: 2;">
+    <div class="position-absolute top-0 start-0 w-100 h-100 fp-gradient"></div>
 
-        <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container position-relative" style="z-index:2;">
+
+        <div class="text-center mb-5 wow fadeInUp">
             <h6 class="text-primary text-uppercase">// Contact //</h6>
             <h1 class="mb-4 text-white">Calling Card</h1>
         </div>
 
         <div class="row justify-content-center">
 
-            <div class="col-lg-5 col-md-8 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-lg-5 col-md-8">
 
-                <!-- CARD WRAPPER -->
                 <div class="shadow-lg rounded overflow-hidden border border-secondary">
 
                     <img src="img/callingCard.jpg"
                          class="w-100"
-                         style="object-fit: cover; cursor: zoom-in;"
-                         alt="Calling Card"
+                         style="cursor: zoom-in;"
                          data-bs-toggle="modal"
                          data-bs-target="#callingCardModal">
 
@@ -890,8 +891,10 @@
 
     </div>
 </div>
-<!-- Calling Card Section End -->
+<!-- ===================== CALLING CARD SECTION END ===================== -->
 
+
+<!-- ===================== VIDEO SCRIPT ===================== -->
 <script>
 const video = document.getElementById("fpVideo");
 const btn = document.getElementById("videoBtn");
@@ -900,29 +903,62 @@ const icon = document.getElementById("videoIcon");
 function toggleVideo() {
     if (video.paused) {
         video.play();
-        btn.style.display = "none"; // 🔥 hide button completely
+        btn.style.display = "none";
     } else {
         video.pause();
-        btn.style.display = "flex";  // show button again
-        icon.classList.remove("fa-pause");
-        icon.classList.add("fa-play");
+        btn.style.display = "flex";
     }
 }
 
-// When video is paused (user clicks video controls)
 video.addEventListener("pause", () => {
     btn.style.display = "flex";
     icon.classList.remove("fa-pause");
     icon.classList.add("fa-play");
 });
 
-// When video starts playing (sync state)
 video.addEventListener("play", () => {
     icon.classList.remove("fa-play");
     icon.classList.add("fa-pause");
     btn.style.display = "none";
 });
 </script>
+
+
+<!-- ===================== STYLES ===================== -->
+<style>
+.fp-section {
+    position: relative;
+}
+
+/* background image */
+.fp-bg {
+    transform: scale(1.05);
+}
+
+/* smooth cinematic overlay */
+.fp-gradient {
+    background: linear-gradient(
+        180deg,
+        rgba(10,15,25,0.70) 0%,
+        rgba(10,15,25,0.85) 55%,
+        rgba(7,10,16,0.95) 100%
+    );
+}
+
+/* ===================== DESKTOP ONLY SPACING ===================== */
+@media (min-width: 992px) {
+
+    /* space AFTER showcase section */
+    .fp-gap-top {
+        margin-bottom: 90px; /* white breathing space */
+    }
+
+    /* space AFTER calling card section */
+    .fp-gap-bottom {
+        margin-bottom: 90px; /* clean footer separation */
+    }
+}
+</style>
     <!-- Fact Start
     <div class="container-fluid fact bg-dark my-5 py-5">
         <div class="container">
