@@ -209,57 +209,186 @@
     <!-- Page Header End -->
 
 
+<!-- LOGO STRIP START -->
+<div class="container-xxl py-3">
+    <div class="container">
+
+        <div class="logo-strip">
+
+            <div class="logo-track">
+
+                <!-- 4 LOGOS ONLY -->
+                <img src="img/Cummins.png" alt="Cummins Logo">
+                <img src="img/Caterpillar.png" alt="Caterpillar Logo">
+                <img src="img/DetroitDiesel.png" alt="Detroit Diesel Logo">
+                <img src="img/fpdiesel.png" alt="FP Diesel Logo">
+
+                <!-- MOBILE DUPLICATES ONLY -->
+                <img class="mobile-only" src="img/Cummins.png" alt="Cummins Logo">
+                <img class="mobile-only" src="img/Caterpillar.png" alt="Caterpillar Logo">
+                <img class="mobile-only" src="img/DetroitDiesel.png" alt="Detroit Diesel Logo">
+                <img class="mobile-only" src="img/fpdiesel.png" alt="FP Diesel Logo">
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<style>
+
+/* OUTER STRIP */
+.logo-strip {
+    overflow: hidden;
+    background: #f8f9fa;
+    border-radius: 14px;
+
+    /* ✅ KEY FIX: balanced edge breathing space */
+    padding: 30px 80px;
+}
+
+/* DESKTOP LAYOUT */
+.logo-track {
+    display: flex;
+
+    /* ✅ FIX: spreads logos evenly across full width */
+    justify-content: space-between;
+
+    align-items: center;
+    width: 100%;
+}
+
+/* LOGOS */
+.logo-track img {
+    height: 95px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* HOVER GLOW */
+.logo-track img:hover {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 12px rgba(0, 140, 255, 0.75))
+            drop-shadow(0 0 22px rgba(0, 140, 255, 0.45));
+}
+
+/* HIDE DUPLICATES ON DESKTOP */
+.mobile-only {
+    display: none;
+}
+
+/* =========================
+   MOBILE SCROLL MODE
+========================= */
+@media (max-width: 768px) {
+
+    .logo-strip {
+        padding: 18px 10px;
+    }
+
+    .logo-track {
+        justify-content: flex-start;
+        gap: 55px;
+        width: max-content;
+        animation: scrollLogos 18s linear infinite;
+    }
+
+    .logo-track img {
+        height: 70px;
+    }
+
+    .mobile-only {
+        display: inline-block;
+    }
+
+    @keyframes scrollLogos {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+}
+
+</style>
+<!-- LOGO STRIP END -->
+
 <!-- Service Start -->
 <div class="container-xxl py-5">
     <div class="container">
+
         <div class="row g-4">
 
             <!-- SERVICE 1 -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="d-flex bg-light py-5 px-4 service-card">
-                    <i class="fa fa-certificate fa-3x text-primary flex-shrink-0"></i>
-                    <div class="ps-4">
-                        <h5 class="mb-3">Guaranteed Quality Parts</h5>
-                        <p>
-                            We supply premium FP Diesel products known for their durability,
-                            precision engineering, and OEM-level performance trusted worldwide.
-                        </p>
-                        <!--<a class="text-secondary border-bottom" href="#">Learn More</a>-->
+            <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="bg-light p-4 service-card h-100">
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fa fa-certificate fa-2x text-primary me-3"></i>
+                        <h5 class="mb-0">Guaranteed Quality Parts</h5>
                     </div>
+
+                    <p class="text-justify mb-0">
+                        We supply premium quality Diesel Parts products; <strong>Cummins</strong>, <strong>Caterpillar</strong>, <strong>Detroit Diesel</strong> and the <strong>FP Diesel</strong>; 
+                        known for their durability, precision engineering, and OEM-level performance trusted worldwide.
+                    </p>
+
                 </div>
             </div>
 
             <!-- SERVICE 2 -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="d-flex bg-light py-5 px-4 service-card">
-                    <i class="fa fa-users-cog fa-3x text-primary flex-shrink-0"></i>
-                    <div class="ps-4">
-                        <h5 class="mb-3">Trusted Engine Experts</h5>
-                        <p>
-                            Our team provides professional assistance in selecting the right FP Diesel
-                            components for heavy-duty diesel engine applications and rebuilds.
-                        </p>
-                        <!--<a class="text-secondary border-bottom" href="#">Learn More</a>-->
+            <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="bg-light p-4 service-card h-100">
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fa fa-users-cog fa-2x text-primary me-3"></i>
+                        <h5 class="mb-0">Trusted Engine Experts</h5>
                     </div>
+
+                    <p class="text-justify mb-0">
+                        Our team provides professional assistance in selecting the right FP Diesel
+                        components for heavy-duty diesel engine applications and rebuilds.
+                    </p>
+
                 </div>
             </div>
 
             <!-- SERVICE 3 -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="d-flex bg-light py-5 px-4 service-card">
-                    <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
-                    <div class="ps-4">
-                        <h5 class="mb-3">USA-Branded Performance Parts</h5>
-                        <p>
-                            FP Diesel delivers high-performance, USA-branded engine components
-                            designed for strength, reliability, and long-lasting engine life.
-                        </p>
-                        <!--<a class="text-secondary border-bottom" href="#">Learn More</a>-->
+            <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="bg-light p-4 service-card h-100">
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fa fa-tools fa-2x text-primary me-3"></i>
+                        <h5 class="mb-0">USA-Branded Performance Parts</h5>
                     </div>
+
+                    <p class="text-justify mb-0">
+                        FP Diesel delivers high-performance, USA-branded engine components
+                        designed for strength, reliability, and long-lasting engine life.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- SERVICE 4 -->
+            <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="bg-light p-4 service-card h-100">
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fa fa-globe fa-2x text-primary me-3"></i>
+                        <h5 class="mb-0">Engine Parts Solutions</h5>
+                    </div>
+
+                    <p class="text-justify mb-0">
+                        FP Diesel engine parts solutions designed for global heavy-duty applications,
+                        ensuring reliability, availability, and consistent performance for workshops and fleets.
+                    </p>
+
                 </div>
             </div>
 
         </div>
+
     </div>
 </div>
 <!-- Service End -->

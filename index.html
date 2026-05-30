@@ -246,58 +246,186 @@
 </div>
 <!-- Carousel End -->
 
+<!-- LOGO STRIP START -->
+<div class="container-xxl py-3">
+    <div class="container">
+
+        <div class="logo-strip">
+
+            <div class="logo-track">
+
+                <!-- 4 LOGOS ONLY -->
+                <img src="img/Cummins.png" alt="Cummins Logo">
+                <img src="img/Caterpillar.png" alt="Caterpillar Logo">
+                <img src="img/DetroitDiesel.png" alt="Detroit Diesel Logo">
+                <img src="img/fpdiesel.png" alt="FP Diesel Logo">
+
+                <!-- MOBILE DUPLICATES ONLY -->
+                <img class="mobile-only" src="img/Cummins.png" alt="Cummins Logo">
+                <img class="mobile-only" src="img/Caterpillar.png" alt="Caterpillar Logo">
+                <img class="mobile-only" src="img/DetroitDiesel.png" alt="Detroit Diesel Logo">
+                <img class="mobile-only" src="img/fpdiesel.png" alt="FP Diesel Logo">
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<style>
+
+/* OUTER STRIP */
+.logo-strip {
+    overflow: hidden;
+    background: #f8f9fa;
+    border-radius: 14px;
+
+    /* ✅ KEY FIX: balanced edge breathing space */
+    padding: 30px 80px;
+}
+
+/* DESKTOP LAYOUT */
+.logo-track {
+    display: flex;
+
+    /* ✅ FIX: spreads logos evenly across full width */
+    justify-content: space-between;
+
+    align-items: center;
+    width: 100%;
+}
+
+/* LOGOS */
+.logo-track img {
+    height: 95px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* HOVER GLOW */
+.logo-track img:hover {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 12px rgba(0, 140, 255, 0.75))
+            drop-shadow(0 0 22px rgba(0, 140, 255, 0.45));
+}
+
+/* HIDE DUPLICATES ON DESKTOP */
+.mobile-only {
+    display: none;
+}
+
+/* =========================
+   MOBILE SCROLL MODE
+========================= */
+@media (max-width: 768px) {
+
+    .logo-strip {
+        padding: 18px 10px;
+    }
+
+    .logo-track {
+        justify-content: flex-start;
+        gap: 55px;
+        width: max-content;
+        animation: scrollLogos 18s linear infinite;
+    }
+
+    .logo-track img {
+        height: 70px;
+    }
+
+    .mobile-only {
+        display: inline-block;
+    }
+
+    @keyframes scrollLogos {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+}
+
+</style>
+<!-- LOGO STRIP END -->
 
 <!-- Service Start -->
 <div class="container-xxl py-5">
     <div class="container">
+
         <div class="row g-4">
 
             <!-- SERVICE 1 -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="d-flex bg-light py-5 px-4 service-card">
-                    <i class="fa fa-certificate fa-3x text-primary flex-shrink-0"></i>
-                    <div class="ps-4">
-                        <h5 class="mb-3">Guaranteed Quality Parts</h5>
-                        <p>
-                            We supply premium FP Diesel products known for their durability,
-                            precision engineering, and OEM-level performance trusted worldwide.
-                        </p>
-                        <!--<a class="text-secondary border-bottom" href="#">Learn More</a>-->
+            <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="bg-light p-4 service-card h-100">
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fa fa-certificate fa-2x text-primary me-3"></i>
+                        <h5 class="mb-0">Guaranteed Quality Parts</h5>
                     </div>
+
+                    <p class="text-justify mb-0">
+                        We supply premium quality Diesel Parts products; <strong>Cummins</strong>, <strong>Caterpillar</strong>, <strong>Detroit Diesel</strong> and the <strong>FP Diesel</strong>; 
+                        known for their durability, precision engineering, and OEM-level performance trusted worldwide.
+                    </p>
+
                 </div>
             </div>
 
             <!-- SERVICE 2 -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="d-flex bg-light py-5 px-4 service-card">
-                    <i class="fa fa-users-cog fa-3x text-primary flex-shrink-0"></i>
-                    <div class="ps-4">
-                        <h5 class="mb-3">Trusted Engine Experts</h5>
-                        <p>
-                            Our team provides professional assistance in selecting the right FP Diesel
-                            components for heavy-duty diesel engine applications and rebuilds.
-                        </p>
-                        <!--<a class="text-secondary border-bottom" href="#">Learn More</a>-->
+            <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="bg-light p-4 service-card h-100">
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fa fa-users-cog fa-2x text-primary me-3"></i>
+                        <h5 class="mb-0">Trusted Engine Experts</h5>
                     </div>
+
+                    <p class="text-justify mb-0">
+                        Our team provides professional assistance in selecting the right FP Diesel
+                        components for heavy-duty diesel engine applications and rebuilds.
+                    </p>
+
                 </div>
             </div>
 
             <!-- SERVICE 3 -->
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="d-flex bg-light py-5 px-4 service-card">
-                    <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
-                    <div class="ps-4">
-                        <h5 class="mb-3">USA-Branded Performance Parts</h5>
-                        <p>
-                            FP Diesel delivers high-performance, USA-branded engine components
-                            designed for strength, reliability, and long-lasting engine life.
-                        </p>
-                        <!--<a class="text-secondary border-bottom" href="#">Learn More</a>-->
+            <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="bg-light p-4 service-card h-100">
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fa fa-tools fa-2x text-primary me-3"></i>
+                        <h5 class="mb-0">USA-Branded Performance Parts</h5>
                     </div>
+
+                    <p class="text-justify mb-0">
+                        FP Diesel delivers high-performance, USA-branded engine components
+                        designed for strength, reliability, and long-lasting engine life.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- SERVICE 4 -->
+            <div class="col-12 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="bg-light p-4 service-card h-100">
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fa fa-globe fa-2x text-primary me-3"></i>
+                        <h5 class="mb-0">Engine Parts Solutions</h5>
+                    </div>
+
+                    <p class="text-justify mb-0">
+                        FP Diesel engine parts solutions designed for global heavy-duty applications,
+                        ensuring reliability, availability, and consistent performance for workshops and fleets.
+                    </p>
+
                 </div>
             </div>
 
         </div>
+
     </div>
 </div>
 <!-- Service End -->
@@ -307,10 +435,10 @@
     <div class="container">
         <div class="row g-5 align-items-stretch">
 
-            <!-- LEFT SIDE: HEADING + CAROUSEL -->
-            <div class="col-lg-6 pt-4 d-flex flex-column" style="min-height: 600px;">
+            <!-- LEFT SIDE -->
+            <div class="col-lg-6 pt-4 d-flex flex-column" style="min-height: 650px;">
 
-                <!-- MOVED HEADING (UNCHANGED CONTENT) -->
+                <!-- HEADING -->
                 <div class="mb-4 wow fadeIn" data-wow-delay="0.1s">
                     <h6 class="text-primary text-uppercase">// FP Diesel Quality Excellence //</h6>
 
@@ -320,58 +448,235 @@
                     </h1>
                 </div>
 
-                <!-- IMAGE CAROUSEL -->
-                <div class="position-relative w-100 flex-grow-1 wow fadeIn" data-wow-delay="0.2s">
+                <!-- ===================== -->
+                <!-- CAROUSEL 1 (MAIN) -->
+                <!-- ===================== -->
+                <div class="position-relative w-100 mb-4 wow fadeIn" data-wow-delay="0.2s">
 
-                    <div id="mpmsAboutCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                    <div id="carouselMain"
+                         class="carousel slide"
+                         data-bs-ride="carousel">
 
-                        <div class="carousel-inner h-100">
+                        <div class="carousel-inner">
 
-                            <div class="carousel-item active h-100">
-                                <img src="img/ForRepair.jpg"
+                            <div class="carousel-item active">
+                                <img src="img/FPDiesel.png"
+                                     class="d-block w-100"
+                                     style="max-height:350px; object-fit:contain; background:#fff;"
+                                     alt="FP Diesel Main Brand">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="img/Parts.png"
+                                     class="d-block w-100"
+                                     style="max-height:350px; object-fit:contain; background:#fff;"
+                                     alt="Engine Parts Overview">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="img/ML7tmHeadGaskets.png"
+                                     class="d-block w-100"
+                                     style="max-height:350px; object-fit:contain; background:#fff;"
+                                     alt="Head Gaskets">
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img src="img/PowerforgedPistons.png"
                                      class="d-block w-100 h-100"
-                                     style="object-fit: contain; object-position: center; background-color: #fff;"
-                                     alt="Tough Parts">
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Powerforged Pistons">
                             </div>
 
                             <div class="carousel-item h-100">
-                                <img src="img/ToughParts.jpg"
+                                <img src="img/EnginePartsAndKitsForCommercialEngines.png"
                                      class="d-block w-100 h-100"
-                                     style="object-fit: contain; object-position: center; background-color: #fff;"
-                                     alt="Repair Kit">
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Commercial Engine Kits">
                             </div>
 
+                            <div class="carousel-item h-100">
+                                <img src="img/ToughWorld.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Tough World Performance">
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img src="img/Tensof1000sOfReplacementEngineParts.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="1000s of Replacement Parts">
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <img src="img/Pistons.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Pistons">
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <img src="img/PistonRings.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Piston Rings">
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img src="img/CylinderLiners.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Cylinder Liners">
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <img src="img/Bearings.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Bearings">
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <img src="img/HeadGasketsAndSets.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="HeadGaskets and Sets">
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img src="img/ValvesAndValvetrainComponents.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Valves and Valvetrain Components">
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <img src="img/InFrameAndOverhaulKits.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Overhauling Kits">
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <img src="img/CrankshaftSeals.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Crankshaft Seals">
+                            </div>
                         </div>
 
-                        <!-- CONTROLS -->
                         <button class="carousel-control-prev" type="button"
-                                data-bs-target="#mpmsAboutCarousel" data-bs-slide="prev">
+                                data-bs-target="#carouselMain" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </button>
 
                         <button class="carousel-control-next" type="button"
-                                data-bs-target="#mpmsAboutCarousel" data-bs-slide="next">
+                                data-bs-target="#carouselMain" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- ===================== -->
+                <!-- CAROUSEL 2 (PARTS / INDUSTRY) -->
+                <!-- ===================== -->
+                <div class="position-relative w-100 flex-grow-1 wow fadeIn" data-wow-delay="0.3s">
+
+                    <div id="carouselSecondary"
+                         class="carousel slide h-100"
+                         data-bs-ride="carousel">
+
+                        <div class="carousel-inner h-100">
+
+                            <div class="carousel-item active h-100">
+                                <img src="img/MorePower.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="More Power FP">
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <img src="img/Slogan.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="FP Slogan">
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <img src="img/RestorePerformance.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Restore Performance">
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <img src="img/SealingSolution.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Sealing Solution">
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img src="img/Agricultural.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Agricultural Use">
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <img src="img/Mining.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Mining Use">
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <img src="img/Industrial.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Industrial Use">
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img src="img/Marine.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Marine Use">
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <img src="img/MediumAndHeavyDutyTruck.png"
+                                     class="d-block w-100 h-100"
+                                     style="object-fit:contain; background:#fff;"
+                                     alt="Medium and Heavy Duty Truck">
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselSecondary" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselSecondary" data-bs-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </button>
 
                     </div>
 
-                    <!-- FP DIESEL QUALITY LABEL (RESTORED) -->
+                    <!-- LABEL
                     <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
                          style="background: rgba(0,0,0,.5); z-index: 10;">
                         <h1 class="display-4 text-white mb-0">FP</h1>
                         <h4 class="text-white">Diesel Quality</h4>
                     </div>
-
+                -->
                 </div>
             </div>
 
-            <!-- RIGHT SIDE: CONTENT (UNCHANGED) -->
+            <!-- ===================== -->
+            <!-- RIGHT SIDE (UNCHANGED EXACT COPY) -->
+            <!-- ===================== -->
             <div class="col-lg-6">
 
                 <p class="mb-4">
                     MPM/MPMS Engine Parts Corporation is a trusted supplier of high-quality diesel engine components in the Philippines.
-                    Originally known as <strong>MPM Corporation</strong>, the company has grown through <strong>five decades of experience, 
+                    Originally known as <strong>MPM Corporation</strong>, the company has grown through <strong>five decades of experience,
                     starting from 1975</strong>, it evolved into a more established and expanded organization known today as MPMS Engine Parts Corporation.
                     Surpassing <strong>50 years</strong> of excellent service. It continues to serve workshops, fleet operators, and heavy equipment users nationwide.
                 </p>
@@ -448,9 +753,6 @@
                     the OE spares market, and the aftermarket. We deliver FP Diesel engine parts globally for the vast majority of
                     off-highway vehicle engines.
                 </p>
-
-                <div class="d-flex align-items-center flex-wrap gap-3">
-
                     <a href="https://thefpdiesel.com/"
                        target="_blank"
                        class="btn btn-primary py-3 px-5">
